@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Login or Register </title>
+<link rel="stylesheet" href="style.css">
+    <style>
+body{
+   background:no-repeat url(https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg) ;
+   background-size: cover; 
+   background-attachment: fixed;
+}
+</style>
+</head>
+<body>
+   <h1 style="border:rgb(87, 55, 143); border-width:5px; border-style:solid;"> <a href="Index.html" title="Home Page">HOME</a></h1>
+ <div class="login-page"> 
+ <div class="form">
+ <form class="login-form">
+ <input type="text" name="username" placeholder="Username" required>
+ <input type="password" name="password" placeholder="Password" required>
+ <!--<form action="https://instagram.com/pransh_25?utm_medium=copy_link"> -->
+ <button> <i class="fa fa-paper-plane"></i><input value="                  LOGIN" onclick = "alert('Sccessfully Logined');">Thanks</button> <p class="message">OR<br><a href="https://instagram.com/pransh_25?utm_medium=copy_link">Not Registerd? Register</a> </p>
+ <!-- </form>-->
+ </div>
+ </div>
+
+
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'> </script>
+ 
+ <script>
+ $('.message a').click(function(){
+    $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+    });
+ 
+ </script>
+</body>
+</html>
+ 
+ 

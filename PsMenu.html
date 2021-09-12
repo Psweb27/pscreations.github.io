@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<title>Main</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{
+  background:no-repeat url("https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8M2QlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80") ;
+      background-size: cover; 
+      background-attachment: fixed;
+    }
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url("https://vastphotos.com/files/uploads/photos/10691/peaceful-water-landscape-photo-l.jpg");
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("https://www.petoskeylsc.com/wp-content/uploads/2018/10/1.-Lakeside-Club-Condominiums-1900x500-1900x500.jpg");
+  min-height: 100%;
+}
+
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="Index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="PsAbout.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> LOGIN</a>
+    <a href="Contact.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="PsAbout.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Login</a>
+    <a href="Contact.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MAIN<span class="w3-hide-small"></span>
+  </div>
+</div>
+
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em> </em></p>
+  <p>I'm an avid photographer living in the lap of Himalayas. My portfolio will talk about my love and dedication towards nature! Get ready to visit Himachal through my lens!
+    According to me, photography is nothing but a perspective of the one who clicks, who senses the emotions, who falls in love with the scenerio and not just the frame. 
+.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+  <p><b> &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;<i class="fa fa-user w3-margin-right"></i>Pransh Sharma</b></p>
+  &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;<img src="C:\Users\sshri\OneDrive\Desktop\PSWEB\Pransh_25.jpeg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="150" height="80">
+    </div><img>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p></p>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">75%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">65%</div>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">9+</span><br>
+    Partners
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">21+</span><br>
+    Projects Done
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">17+</span><br>
+    Happy Clients
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">76+</span><br>
+    Meetings
+  </div>
+</div>
+    <!-- Second Parallax Image with Portfolio Text -->
+        <div class="bgimg-2 w3-display-container w3-opacity-min" id="home">
+          <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">PORTFOLIO<span class="w3-hide-small"></span>
+          </div>
+        </div>
+    
+  <!-- Container (Portfolio Section) -->
+  <p class="w3-center"><em>Here are some of my best photos.<br> Click on the images to make them bigger</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="C:\Users\sshri\OneDrive\Desktop\PSWEB\ds13.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Holy Place" height ="205">..............
+    </div>
+
+    <div class="w3-col m3">
+      <img src="C:\Users\sshri\OneDrive\Desktop\PSWEB\ds12.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Perferct Snap doesn't Exist" height ="205">..............
+    </div>
+
+    <div class="w3-col m3">
+      <img src="C:\Users\sshri\OneDrive\Desktop\PSWEB\ds9.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Go Green" height ="205">..............
+    </div>
+
+    <div class="w3-col m3">
+      <img src="C:\Users\sshri\OneDrive\Desktop\PSWEB\ds10.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Beautiful Sight" height ="205">..............
+    </div>
+
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="C:\Users\sshri\OneDrive\Desktop\PSWEB\ds14.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sunset" height="205">..............
+    </div>
+
+
+    <div class="w3-col m3">
+      <img src="C:\Users\sshri\OneDrive\Desktop\PSWEB\ds5.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Good Collection Of Shells" height="205">..............
+    </div>
+
+    <div class="w3-col m3">
+      <img src="C:\Users\sshri\OneDrive\Desktop\PSWEB\ds7.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Nature is Love" height="205">..............
+    </div>
+
+
+      <div class="w3-col m3">
+        <img src="C:\Users\sshri\OneDrive\Desktop\PSWEB\ds1.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The Mist Over The Mountains" height="205">..............
+      </div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  
+<br>
+<br>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://instagram.com/pransh_25?utm_medium=copy_link" title="Pransh Sharma" target="_blank" class="w3-hover-text-green">PS CREATIONS</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
+
+
+
